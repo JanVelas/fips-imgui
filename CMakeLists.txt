@@ -25,6 +25,13 @@ fips_begin_lib(imgui)
         imstb_textedit.h
         imstb_truetype.h
     )
+    fips_dir(imgui/backends)
+    fips_files(
+        imgui_impl_opengl3.cpp
+        imgui_impl_opengl3.h
+        imgui_impl_glfw.cpp
+        imgui_impl_glfw.h
+    )
 fips_end_lib()
 target_include_directories(imgui PUBLIC imgui)
 
